@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AlvaroGalle.dev</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold">Mi Porfolio</div>
+      <nav class="space-x-4">
+        <a href="#inicio" class="text-gray-600 hover:text-gray-900">Inicio</a>
+        <a href="#sobre-mi" class="text-gray-600 hover:text-gray-900">Sobre Mí</a>
+        <a href="#proyectos" class="text-gray-600 hover:text-gray-900">Proyectos</a>
+        <a href="#contacto" class="text-gray-600 hover:text-gray-900">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+   <!-- Sección inicio -->
+   <section id="inicio" class="bg-cover bg-center h-screen" style="background-image: url('images/panal.jpg')">
+
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="https://linkedin.com/in/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+          <img src="images/skills/html.png" alt="Ram Maheshwari Linkedin Profile" class="home-hero__social-icon">
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://twitter.com/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+          <img src="images/skills/html.png" alt="RammCodes Twitter Profile" class="home-hero__social-icon">
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
+          <img src="images/skills/html.pngg" alt="RammCodes Youtube Channel" class="home-hero__social-icon">
+        </a>
+      </div>
+    </div>
+
+    <div class="container mx-auto h-full flex items-center justify-center">
+      <div class="text-center">
+        <div class="flex items-center justify-center space-x-4">
+          <a href="https://github.com/alvarogalle" target="_blank">
+            <img class="rounded-full w-48" src="https://github.com/alvarogalle.png" alt="AlvaroGalle_github">
+          </a>
+          <h1 class="text-4xl md:text-6xl font-bold text-dark-500">Hola, soy Álvaro</h1>
+        </div>
+        <p class="mt-4 text-xl text-dark-200">Desarrollador Web y Apasionado por la Tecnología</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Sección Sobre Mí -->
+  <section id="sobre-mi" class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
+          <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+          <p class="text-gray-700">Soy un desarrollador apasionado con experiencia en crear aplicaciones web modernas utilizando las últimas tecnologías. Me encanta aprender y enfrentar nuevos retos.</p>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
+          <div class="skills flex flex-wrap">
+            <div class="skill">
+              <img class="w-1/6" src="images/skills/html.png">
+              <div class="skill-name py-4 px-8 mb-6 mr-6 text-lg font-bold rounded bg-gray-300/50 text-gray-600">HTML</div>
+            </div>
+            <div class="skill">
+              <img src="ruta/a/la/imagen/css.png" alt="CSS">
+              <div class="skill-name py-4 px-8 mb-6 mr-6 text-lg font-bold rounded bg-gray-300/50 text-gray-600">CSS</div>
+            </div>
+            <!-- Repite para cada habilidad -->
+          </div>               
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="bg-gray-200 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Proyectos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded shadow p-6">
+          <img src="https://via.placeholder.com/400x200" alt="Proyecto 1" class="rounded">
+          <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+          <p class="mt-2 text-gray-600">Descripción breve del proyecto 1.</p>
+        </div>
+        <div class="bg-white rounded shadow p-6">
+          <img src="https://via.placeholder.com/400x200" alt="Proyecto 2" class="rounded">
+          <h3 class="mt-4 text-xl font-bold">Proyecto 2</h3>
+          <p class="mt-2 text-gray-600">Descripción breve del proyecto 2.</p>
+        </div>
+        <div class="bg-white rounded shadow p-6">
+          <img src="https://via.placeholder.com/400x200" alt="Proyecto 3" class="rounded">
+          <h3 class="mt-4 text-xl font-bold">Proyecto 3</h3>
+          <p class="mt-2 text-gray-600">Descripción breve del proyecto 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
+      <div class="max-w-lg mx-auto">
+        <form action="#" method="POST" class="bg-white p-8 rounded shadow">
+          <div class="mb-4">
+            <label class="block text-gray-700" for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="w-full mt-2 p-2 border rounded">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700" for="email">Email</label>
+            <input type="email" id="email" name="email" class="w-full mt-2 p-2 border rounded">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" class="w-full mt-2 p-2 border rounded"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- components -->
+  <app-root></app-root>
+  <!-- end components -->
+
+  <footer class="bg-white py-4">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2025 Portfolio del Desarrollador. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>
