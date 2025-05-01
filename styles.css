@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: light) {
+  :root {
+      --body-bg: #FFFFFF;
+      --body-color: #000000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --body-bg: #000000;
+      --body-color: #FFFFFF;
+  }
+}
+
+:root{
+    /* color-scheme: light dark; */
+}
+
+header{
+  position: sticky; 
+  top: 0; 
+  z-index: 10;
+}
+
+
+  .home-hero__socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    padding: .5rem;
+  }
+
+  .rrss {
+    width: 5rem;
+  }
+
+  .rrss .icon{
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
