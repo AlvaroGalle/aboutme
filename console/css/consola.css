@@ -1,0 +1,66 @@
+:root {
+  --font: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  /* Monokai */
+  --bg: #1e1f1c; --fg: #f8f8f2; --muted: #75715e; --accent: #a6e22e; --error: #f92672; --link: #66d9ef;
+}
+/* Solarized */
+[data-theme="solarized"] { --bg:#002b36; --fg:#eee8d5; --muted:#586e75; --accent:#b58900; --error:#dc322f; --link:#268bd2; }
+/* High contrast */
+[data-theme="high-contrast"] { --bg:#000; --fg:#fff; --muted:#bbb; --accent:#0f0; --error:#f33; --link:#0ff; }
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font);
+}
+.wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
+.screen {
+  border: 1px solid var(--muted); border-radius: 8px;
+  padding: 16px; min-height: 80vh; background: rgba(0,0,0,0.15);
+}
+#output { white-space: pre-wrap; word-break: break-word; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+#terminal {
+  display: grid; grid-template-columns: auto 1fr;
+  align-items: center; gap: 8px; margin-top: 8px;
+}
+.prompt { color: var(--accent); }
+#cmd-input {
+  background: transparent; border: none; outline: none; color: var(--fg);
+  font: inherit; caret-color: transparent; /* usamos cursor custom */
+}
+.cursor {
+  display: inline-block; width: .6ch; height: 1.1em; margin-left: 2px;
+  background: var(--fg); transform: translateY(2px);
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+.line { margin: 4px 0; }
+.line .ps { color: var(--accent); }
+.stdout { color: var(--fg); }
+.stderr { color: var(--error); }
+
+.badge { display: inline-block; border: 1px solid var(--muted); padding: 2px 6px; border-radius: 999px; margin: 2px 6px 2px 0; }
+.progress {
+  display: inline-block; height: 10px; width: 180px; border: 1px solid var(--muted); margin-left: 8px; vertical-align: middle;
+}
+.progress > span { display: block; height: 100%; background: var(--accent); }
+
+.sr-only { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+
+#input-mirror, #cmd-input {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  margin: 0;
+}#input-mirror, #cmd-input {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  margin: 0;
+}
