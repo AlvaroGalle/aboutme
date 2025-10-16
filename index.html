@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="dark">
 
 <head>
   <meta charset="utf-8">
@@ -56,204 +56,272 @@
     </svg>
   </button>
 
-    <button id="btnConsole2" class="opacity-0 fixed bottom-6 left-6 bg-gray-200 hover:bg-gray-300 dark:bg-white dark:hover:bg-gray-200 text-white p-3 rounded-lg shadow-lg transition-opacity duration-300 z-50 
+  <button id="btnConsole2" class="opacity-0 fixed bottom-6 left-6 bg-gray-200 hover:bg-gray-300 dark:bg-white dark:hover:bg-gray-200 text-white p-3 rounded-lg shadow-lg transition-opacity duration-300 z-50 
     cursor-pointer" aria-label="Volver arriba">
-    <img src="images/others/terminal.png" alt="Terminal" class="w-8 h-8 text-gray-800 dark:text-white">
+    <img src="./images/others/terminal.png" alt="Terminal" class="w-8 h-8 text-gray-800 dark:text-white">
   </button>
 
   <section id="inicio"
     class="relative h-screen bg-cover bg-center bg-[url('/images/background/panal.jpg')] dark:bg-[url('/images/background/darkPanal.png')]">
   </section>
 
- <div class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white shadow-md p-2">
-      <div class="rrss w-20">
-        <a href="https://www.linkedin.com/in/%C3%A1lvaro-gallego-a87008254/"
-          class="block p-4 rounded-md hover:bg-gray-200">
-          <img src="images/rrss/linkedin.png" alt="Perfil linkedin">
-        </a>
-      </div>
-      <div class="rrss w-20">
-        <a href="https://github.com/alvarogalle" class="block p-4 rounded-md hover:bg-gray-200">
-          <img src="images/rrss/github.png" alt="Perfil github">
-        </a>
-      </div>
-      <div class="rrss w-20">
-        <a href="mailto:alvarogy2004@gmail.com" class="block p-4 rounded-md hover:bg-gray-200">
-          <img src="images/rrss/correo.png" alt="Cuenta de correo">
-        </a>
-      </div>
+  <div class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white shadow-md p-2">
+    <div class="rrss w-20">
+      <a href="https://www.linkedin.com/in/%C3%A1lvaro-gallego-a87008254/"
+        class="block p-4 rounded-md hover:bg-gray-200">
+        <img src="./images/rrss/linkedin.png" alt="Perfil linkedin">
+      </a>
     </div>
+    <div class="rrss w-20">
+      <a href="https://github.com/alvarogalle" class="block p-4 rounded-md hover:bg-gray-200">
+        <img src="./images/rrss/github.png" alt="Perfil github">
+      </a>
+    </div>
+    <div class="rrss w-20">
+      <a href="mailto:alvarogy2004@gmail.com" class="block p-4 rounded-md hover:bg-gray-200">
+        <img src="./images/rrss/correo.png" alt="Cuenta de correo">
+      </a>
+    </div>
+  </div>
 
   <section>
     <div class="absolute inset-0 flex items-center justify-center text-center">
       <div>
         <h1 class="text-4xl md:text-6xl font-bold text-stone-950 dark:text-white">&lt; Hola, soy Álvaro /&gt;</h1>
         <p class="mt-4 text-xl text-stone-950 dark:text-white">Desarrollador Web y Apasionado por la Tecnología</p>
-            <div>
-              <a href="cv.pdf" download
-            class="inline-flex items-center gap-2 mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg shadow transition duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
-            </svg>
+        <div>
+          <a href="cv.pdf" download
+            class="btn inline-flex items-center gap-2 mt-4 bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg shadow transition duration-300">
+            <i class="fas fa-download"></i>
             Descargar CV
           </a>
-          <button id="btnConsole" class="inline-flex items-center gap-2 mt-4 bg-black hover:bg-black/50 text-white font-medium py-2 px-4 rounded-lg shadow transition duration-300">
+          <button id="btnConsole"
+            class="inline-flex items-center gap-2 mt-4 bg-black hover:bg-black/50 text-white font-medium py-2 px-4 rounded-lg shadow transition duration-300">
             <i class="fas fa-terminal"></i> Abrir Terminal
           </button>
         </div>
       </div>
     </div>
-
   </section>
 
-  <section id="sobre-mi" class="py-16">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center">
-        <!--<div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
-          <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
-          <p class="text-gray-400">
-            Soy un desarrollador apasionado con experiencia en crear aplicaciones web modernas
-            utilizando las últimas tecnologías. Me encanta aprender y enfrentar nuevos retos.
-          </p>
+  <section id="skills" class="relative py-12 bg-gray-50 overflow-hidden min-h-[32rem] flex items-center justify-center">
+    <div class="md:w-1/2 md:mt-0 md:pl-12">
+      <h2 class="text-3xl font-bold text-center"></h2>
 
-          <a href="cv.pdf" download
-            class="inline-flex items-center gap-2 mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg shadow transition duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
-            </svg>
-            Descargar CV
-          </a>
-        </div>-->
-   <div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
-  <h2 class="text-3xl font-bold mb-6 text-center md:text-left">Skills</h2>
+      <div class="relative flex items-center justify-center">
+        <div
+          class="absolute w-16 h-16 bg-green-500 rounded-full shadow-lg flex items-center justify-center text-white font-bold z-10">
+          Skills
+        </div>
 
-  <!-- FRONTEND -->
-  <h3 class="text-xl font-semibold mb-4 text-center md:text-left text-blue-600">Frontend</h3>
-  <div class="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
-    <!-- HTML -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">HTML</span>
-      <img src="images/skills/html.png" alt="HTML" class="hidden group-hover:block w-6 h-6" />
+        <div
+          class="absolute animate-[spin_20s_linear_infinite] border border-green-400 rounded-full w-32 h-32 flex items-center justify-center opacity-90 pointer-events-none">
+
+          <div
+            class="absolute -top-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/html.png" alt="HTML" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">HTML</span>
+          </div>
+
+          <div
+            class="absolute top-1/2 -right-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/css.png" alt="CSS" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">CSS</span>
+          </div>
+
+          <div
+            class="absolute -bottom-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/js.png" alt="JS" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">JS</span>
+          </div>
+
+          <div
+            class="absolute top-1/2 -left-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/angular.png" alt="Angular" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">Angular</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute animate-[spin_35s_linear_reverse_infinite] border border-green-500 rounded-full w-64 h-64 flex items-center justify-center opacity-80 pointer-events-none">
+          <div
+            class="absolute -top-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/java.png" alt="Java" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">Java</span>
+          </div>
+
+          <div
+            class="absolute top-1/2 -right-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/springBoot.png" alt="Spring" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">Spring</span>
+          </div>
+
+          <div
+            class="absolute -bottom-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/mysql.png" alt="MySQL" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">MySQL</span>
+          </div>
+
+          <div
+            class="absolute top-1/2 -left-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/docker.svg" alt="Docker" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">Docker</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute animate-[spin_50s_linear_infinite] border border-green-600 rounded-full w-96 h-96  flex items-center justify-center opacity-70 pointer-events-none">
+          <div
+            class="absolute -top-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/git.png" alt="Git" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">Git</span>
+          </div>
+
+          <div
+            class="absolute top-1/2 -right-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/github.png" alt="GitHub" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">GitHub</span>
+          </div>
+
+          <div
+            class="absolute -bottom-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/oracle.png" alt="Oracle" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">Oracle</span>
+          </div>
+
+          <div
+            class="absolute top-1/2 -left-4 group bg-white p-2 rounded-full shadow text-sm font-semibold transition-all duration-300 pointer-events-auto cursor-pointer">
+            <img src="./images/skills/tailwind.png" alt="Tailwind" class="block w-6 h-6 group-hover:hidden" />
+            <span class="hidden group-hover:block text-sm font-semibold text-gray-700">Tailwind</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- CSS -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">CSS</span>
-      <img src="images/skills/css.png" alt="CSS" class="hidden group-hover:block w-6 h-6" />
-    </div>
+    <div class="md:w-1/2 md:mt-0 md:pl-12">
+      <h2 class="text-3xl font-bold mb-6 text-center md:text-left">Skills</h2>
 
-    <!-- Sass -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Sass</span>
-      <img src="images/skills/sass.png" alt="Sass" class="hidden group-hover:block w-6 h-6" />
-    </div>
+      <h3 class="text-xl font-semibold mb-4 text-center md:text-left text-blue-600">Frontend</h3>
+      <div class="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">HTML</span>
+          <img src="./images/skills/html.png" alt="HTML" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- Bootstrap -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Bootstrap</span>
-      <img src="images/skills/bootstrap.png" alt="Bootstrap" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">CSS</span>
+          <img src="./images/skills/css.png" alt="CSS" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- Tailwind -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Tailwind</span>
-      <img src="images/skills/tailwind.png" alt="Tailwind" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Sass</span>
+          <img src="./images/skills/sass.png" alt="Sass" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- JavaScript -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">JavaScript</span>
-      <img src="images/skills/js.png" alt="JavaScript" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Bootstrap</span>
+          <img src="./images/skills/bootstrap.png" alt="Bootstrap" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- Angular -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Angular</span>
-      <img src="images/skills/angular.png" alt="Angular" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Tailwind</span>
+          <img src="./images/skills/tailwind.png" alt="Tailwind" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- Vue -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Vue</span>
-      <img src="images/skills/vue.png" alt="Vue" class="hidden group-hover:block w-6 h-6" />
-    </div>
-  </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">JavaScript</span>
+          <img src="./images/skills/js.png" alt="JavaScript" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-  <!-- BACKEND -->
-  <h3 class="text-xl font-semibold mb-4 text-center md:text-left text-green-600">Backend</h3>
-  <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-    <!-- Java -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Java</span>
-      <img src="images/skills/java.png" alt="Java" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Angular</span>
+          <img src="./images/skills/angular.png" alt="Angular" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- PHP -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">PHP</span>
-      <img src="images/skills/php.png" alt="PHP" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Vue</span>
+          <img src="./images/skills/vue.png" alt="Vue" class="hidden group-hover:block w-6 h-6" />
+        </div>
+      </div>
 
-    <!-- Spring Boot -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Spring Boot</span>
-      <img src="images/skills/springBoot.png" alt="Spring Boot" class="hidden group-hover:block w-6 h-6" />
-    </div>
+      <h3 class="text-xl font-semibold mb-4 text-center md:text-left text-green-600">Backend</h3>
+      <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Java</span>
+          <img src="./images/skills/java.png" alt="Java" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- MySQL -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">MySQL</span>
-      <img src="images/skills/mysql.png" alt="MySQL" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">PHP</span>
+          <img src="./images/skills/php.png" alt="PHP" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- Oracle -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Oracle</span>
-      <img src="images/skills/oracle.png" alt="Oracle" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Spring Boot</span>
+          <img src="./images/skills/springBoot.png" alt="Spring Boot" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- Docker -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Docker</span>
-      <img src="images/skills/docker.svg" alt="Docker" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">MySQL</span>
+          <img src="./images/skills/mysql.png" alt="MySQL" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- Git -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">Git</span>
-      <img src="images/skills/git.png" alt="Git" class="hidden group-hover:block w-6 h-6" />
-    </div>
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Oracle</span>
+          <img src="./images/skills/oracle.png" alt="Oracle" class="hidden group-hover:block w-6 h-6" />
+        </div>
 
-    <!-- GitHub -->
-    <div class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all">
-      <span class="group-hover:hidden text-sm font-semibold text-gray-700">GitHub</span>
-      <img src="images/skills/github.png" alt="GitHub" class="hidden group-hover:block w-6 h-6" />
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Docker</span>
+          <img src="./images/skills/docker.svg" alt="Docker" class="hidden group-hover:block w-6 h-6" />
+        </div>
+
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">Git</span>
+          <img src="./images/skills/git.png" alt="Git" class="hidden group-hover:block w-6 h-6" />
+        </div>
+
+        <div
+          class="relative group w-28 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow hover:shadow-md overflow-hidden cursor-default transition-all cursor-pointer">
+          <span class="group-hover:hidden text-sm font-semibold text-gray-700">GitHub</span>
+          <img src="./images/skills/github.png" alt="GitHub" class="hidden group-hover:block w-6 h-6" />
+        </div>
+      </div>
     </div>
-  </div>
-</div>
     </div>
     </div>
   </section>
+
 
   <section id="proyectos" class="bg-gray-200 py-16">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Proyectos</h2>
-
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
           <div class="relative group overflow-hidden shadow-lg hover:shadow-xl transition-all">
             <div class="flex space-x-4">
               <div class="flex-2">
-                <img src="images/proyects/gymtracker/pc_gymtracker.png" alt="Proyecto gymtracker"
+                <img src="./images/proyects/gymtracker/pc_gymtracker.png" alt="Proyecto gymtracker"
                   class="object-contain w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
               </div>
               <div class="flex-1">
-                <img src="images/proyects/gymtracker/phone_gymtracker.png" alt="Proyecto gymtracker"
+                <img src="./images/proyects/gymtracker/phone_gymtracker.png" alt="Proyecto gymtracker"
                   class="object-contain w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
               </div>
             </div>
@@ -270,15 +338,13 @@
             </div>
           </div>
           <div class="relative group overflow-hidden shadow-lg hover:shadow-xl transition-all">
-            <div class="bg-stone-900 text-center py-4 px-2">
-              <p class="text-sm text-center mb-4">GymTracker es una aplicación para registrar y seguir entrenamientos en
-                el gimnasio. Incluye una interfaz web y una API para gestionar ejercicios.</p>
+            <div class="bg-gray-300 text-center py-4 px-2">
               <div class="flex justify-center gap-3 items-center flex-wrap">
-                <img src="images/skills/java.png" alt="Java" class="h-6">
-                <img src="images/skills/springBoot.png" alt="Spring Boot" class="h-6">
-                <img src="images/skills/bootstrap.png" alt="Bootstrap" class="h-6">
-                <img src="images/skills/mysql.png" alt="MySQL" class="h-6">
-                <img src="images/skills/docker.svg" alt="Docker" class="h-6">
+                <img src="./images/skills/java.png" alt="Java" class="h-6">
+                <img src="./images/skills/springBoot.png" alt="Spring Boot" class="h-6">
+                <img src="./images/skills/bootstrap.png" alt="Bootstrap" class="h-6">
+                <img src="./images/skills/mysql.png" alt="MySQL" class="h-6">
+                <img src="./images/skills/docker.svg" alt="Docker" class="h-6">
               </div>
             </div>
             <div
@@ -292,46 +358,83 @@
           </div>
         </div>
 
-        <div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all">
-          <img src="" alt="Proyecto 2"
-            class="object-cover w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
-          <div
-            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center items-center text-white p-4">
-            <h3 class="text-xl font-semibold mb-2">Otro Proyecto</h3>
-            <p class="text-sm text-center mb-4">Descripción breve del proyecto.</p>
-            <div class="flex gap-2">
-              <a href="#" target="_blank" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 text-sm">Demo</a>
-              <a href="#" target="_blank"
-                class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 text-sm">Código</a>
+        <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+          <div class="relative group overflow-hidden shadow-lg hover:shadow-xl transition-all">
+             <div class="flex space-x-4">
+            <div class="flex-2">
+              <img src="./images/proyects/planaula/pc_planaula.png" alt="Proyecto planaula"
+                class="object-contain w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
+            </div>
+            <div class="flex-1">
+              <img src="./images/proyects/planaula/phone_planaula.png" alt="Proyecto planaula"
+                class="object-contain w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
             </div>
           </div>
-        </div>
-        <div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all">
-          <img src="" alt="Proyecto 3"
-            class="object-cover w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
           <div
             class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center items-center text-white p-4">
-            <h3 class="text-xl font-semibold mb-2">Proyecto 3</h3>
-            <p class="text-sm text-center mb-4">Descripción breve del proyecto 3.</p>
-            <div class="flex gap-2">
-              <a href="#" target="_blank" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 text-sm">Demo</a>
-              <a href="#" target="_blank"
-                class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 text-sm">Código</a>
+            <h3 class="text-xl font-semibold mb-2">PlanAula</h3>
+            <p class="text-sm text-center mb-4">PlanAula es una aplicación web creada en <b>Java</b> que emplea
+              <b>PostgreSQL</b> como base de datos para almacenar y administrar de forma eficiente la información
+              relacionada con <b>horarios escolares</b>, como aulas, asignaturas, profesores y tramos horarios. Su
+              propósito es optimizar la organización académica mediante una gestión clara y visual de la planificación
+              semanal. El proyecto está configurado para su despliegue en entornos <b>Docker</b> y <b>Render</b>, lo que
+              facilita su portabilidad y mantenimiento.</p>
+          </div>
+          </div>
+          <div class="relative group overflow-hidden shadow-lg hover:shadow-xl transition-all">
+            <div class="bg-gray-300 text-center py-4 px-2">
+              <div class="flex justify-center gap-3 items-center flex-wrap">
+                <img src="./images/skills/java.png" alt="Java" class="h-6">
+                <img src="./images/skills/springBoot.png" alt="Spring Boot" class="h-6">
+                <img src="./images/skills/bootstrap.png" alt="Bootstrap" class="h-6">
+                <img src="./images/skills/postgresql.png" alt="PostgreSQL" class="h-6">
+                <img src="./images/skills/render.png" alt="Render" class="h-6">
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center items-center text-white p-4">
+              <div class="flex gap-2">
+                <a href="#" target="_blank" class="bg-blue-500 px-4 py-2 hover:bg-blue-600 text-sm">Demo</a>
+              <a href="https://github.com/AlvaroGalle/PlanAula" target="_blank"
+                  class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 text-sm">Código</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all">
-          <img src="" alt="Proyecto 2"
-            class="object-cover w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
+        <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+          <div class="relative group overflow-hidden shadow-lg hover:shadow-xl transition-all">
+             <div class="flex space-x-4">
+            <div class="flex-2">
+              <img src="./images/proyects/obras-en-la-web.jpg" alt="Proyecto RIVO"
+                class="object-contain w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
+            </div>
+            <!--<div class="flex-1">
+              <img src="" alt="Proyecto RIVO"
+                class="object-contain w-full h-56 md:h-64 transition-all duration-300 group-hover:scale-105">
+            </div>-->
+          </div>
           <div
             class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center items-center text-white p-4">
-            <h3 class="text-xl font-semibold mb-2">Otro Proyecto</h3>
-            <p class="text-sm text-center mb-4">Descripción breve del proyecto.</p>
-            <div class="flex gap-2">
-              <a href="#" target="_blank" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 text-sm">Demo</a>
-              <a href="#" target="_blank"
-                class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 text-sm">Código</a>
+            <h3 class="text-xl font-semibold mb-2">RIVO</h3>
+            <p class="text-sm text-center mb-4">Web de control de tiempos de espera para el transporte público a nivel nacional.
+               -Aplicación en desarrollo-</p>
+          </div>
+          </div>
+          <div class="relative group overflow-hidden shadow-lg hover:shadow-xl transition-all">
+            <div class="bg-gray-300 text-center py-4 px-2">
+              <div class="flex justify-center gap-3 items-center flex-wrap">
+                <img src="./images/skills/angular.png" alt="Angular" class="h-6">
+                <img src="./images/skills/tailwind.png" alt="Tailwind" class="h-6">
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center items-center text-white p-4">
+              <div class="flex gap-2">
+                <a href="#" target="_blank" class="bg-blue-500 px-4 py-2 hover:bg-blue-600 text-sm">Demo</a>
+              <a href="https://github.com/AlvaroGalle/PlanAula" target="_blank"
+                  class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 text-sm">Código</a>
+              </div>
             </div>
           </div>
         </div>
@@ -378,18 +481,18 @@
     </div>
   </section>
 
-<div id="consoleWrapper"
-     class="fixed bottom-0 left-0 w-full h-96 border-t border-green-500 rounded-t-xl bg-black
+  <div id="consoleWrapper" class="fixed bottom-0 left-0 w-full h-96 border-t border-green-500 rounded-t-xl bg-black
             translate-y-full transition-transform duration-500 z-[999] flex flex-col">
-            <div>
-              <div id="resizeBar" class="h-2 bg-green-500 cursor-row-resize"></div>
-              <div class="mr-4 p-2 flex justify-end bg-stone-900 rounded-t-xl">
-                  <i id="btnConsole3" class="fa-solid fa-square-xmark text-green-400 text-2xl cursor-pointer hover:text-red-500"></i>
-              </div>
-            </div>
-  
-  <iframe id="console" src="/console/index.html" class="w-full flex-1 bg-black rounded-t-xl"></iframe>
-</div>
+    <div>
+      <div id="resizeBar" class="h-2 bg-green-500 cursor-row-resize"></div>
+      <div class="mr-4 p-2 flex justify-end bg-stone-900 rounded-t-xl">
+        <i id="btnConsole3"
+          class="fa-solid fa-square-xmark text-green-400 text-2xl cursor-pointer hover:text-red-500"></i>
+      </div>
+    </div>
+
+    <iframe id="console" src="/console/index.html" class="w-full flex-1 bg-black rounded-t-xl"></iframe>
+  </div>
 
 
 
@@ -400,102 +503,112 @@
   </footer>
 </body>
 
-  <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+<script>
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  window.addEventListener('scroll', () => {
+    ["backToTop", "btnConsole2"].forEach(id => {
+      const button = document.getElementById(id);
+      if (window.scrollY > 300) {
+        button.classList.remove('opacity-0', 'translate-y-4');
+        button.classList.add('opacity-100', 'translate-y-0');
+      } else {
+        button.classList.remove('opacity-100', 'translate-y-0');
+        button.classList.add('opacity-0', 'translate-y-4');
+      }
+    })
+  });
+
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('darkModeToggle');
+    const htmlElement = document.documentElement;
+    const toggleIcon = document.getElementById('toggleIcon');
+
+    // Detecta preferencia del sistema
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Obtiene tema actual de localStorage o sistema
+    const savedTheme = localStorage.getItem('theme');
+    const currentTheme = savedTheme ? savedTheme : (systemPrefersDark ? 'dark' : 'light');
+
+    // Aplica el tema
+    if (currentTheme === 'dark') {
+      htmlElement.classList.add('dark');
+    } else {
+      htmlElement.classList.remove('dark');
     }
+    updateIcon(currentTheme); // asegúrate de que esta función existe
 
-    window.addEventListener('scroll', () => {
-      ["backToTop", "btnConsole2"].forEach(id =>{
-        const button = document.getElementById(id);
-        if (window.scrollY > 300) {
-         button.classList.remove('opacity-0', 'translate-y-4');
-         button.classList.add('opacity-100', 'translate-y-0');
-        } else {
-         button.classList.remove('opacity-100', 'translate-y-0');
-         button.classList.add('opacity-0', 'translate-y-4');
-       }
-      })
-    });
-
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const toggleButton = document.getElementById('darkModeToggle');
-      const htmlElement = document.documentElement;
-      const toggleIcon = document.getElementById('toggleIcon');
-
-      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-      const currentTheme = localStorage.getItem('theme') || (systemPrefersDark ? 'dark' : 'light');
-
-      htmlElement.classList.add(currentTheme);
-      updateIcon(currentTheme);
-
+    // Listener para cambios en el sistema SOLO si no hay preferencia guardada
+    if (!savedTheme) {
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (!localStorage.getItem('theme')) {
-          const newTheme = e.matches ? 'dark' : 'light';
-          htmlElement.classList.replace(htmlElement.classList.contains('dark') ? 'dark' : 'light', newTheme);
-          updateIcon(newTheme);
-        }
-      });
-
-      toggleButton.addEventListener('click', () => {
-        const isDark = htmlElement.classList.contains('dark');
-        const newTheme = isDark ? 'light' : 'dark';
-
-        htmlElement.classList.replace(isDark ? 'dark' : 'light', newTheme);
-        localStorage.setItem('theme', newTheme);
+        const newTheme = e.matches ? 'dark' : 'light';
+        htmlElement.classList.toggle('dark', newTheme === 'dark');
         updateIcon(newTheme);
       });
+    }
+
+    // Toggle manual del botón
+    toggleButton.addEventListener('click', () => {
+      const isDark = htmlElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      updateIcon(isDark ? 'dark' : 'light');
     });
 
-    function updateIcon(theme) {
-        toggleIcon.innerHTML = theme === 'dark'
-          ? `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  });
+
+  function updateIcon(theme) {
+    toggleIcon.innerHTML = theme === 'dark'
+      ? `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                    </svg>`
-          : `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      : `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                    </svg>`;
-      }
+  }
 
-  
+
   const btn = document.getElementById('btnConsole');
   const btn2 = document.getElementById('btnConsole2');
   const btn3 = document.getElementById('btnConsole3');
 
-const wrapper = document.getElementById('consoleWrapper');
-const resizeBar = document.getElementById('resizeBar');
+  const wrapper = document.getElementById('consoleWrapper');
+  const resizeBar = document.getElementById('resizeBar');
 
-let abierto = false;
-let isResizing = false;
+  let abierto = false;
+  let isResizing = false;
 
-[btn, btn2, btn3].forEach(button => {
-  button.addEventListener('click', () => {
-  abierto = !abierto;
-  wrapper.classList.toggle('translate-y-full', !abierto);
-  wrapper.classList.toggle('translate-y-0', abierto);
-  btn.innerHTML = abierto ? '<i class="fa-solid fa-circle-xmark"></i> Cerrar Terminal' : ' <i class="fas fa-terminal"></i> Abrir Terminal';
-});
-});
+  [btn, btn2, btn3].forEach(button => {
+    button.addEventListener('click', () => {
+      abierto = !abierto;
+      wrapper.classList.toggle('translate-y-full', !abierto);
+      wrapper.classList.toggle('translate-y-0', abierto);
+      btn.innerHTML = abierto ? '<i class="fa-solid fa-circle-xmark"></i> Cerrar Terminal' : ' <i class="fas fa-terminal"></i> Abrir Terminal';
+    });
+  });
 
-resizeBar.addEventListener('mousedown', () => {
-  isResizing = true;
-  document.body.style.userSelect = 'none';
-});
+  resizeBar.addEventListener('mousedown', () => {
+    isResizing = true;
+    document.body.style.userSelect = 'none';
+  });
 
-document.addEventListener('mousemove', (e) => {
-  if (!isResizing) return;
-  const newHeight = window.innerHeight - e.clientY;
-  if (newHeight >= 100 && newHeight <= window.innerHeight * 0.8) {
-    wrapper.style.height = newHeight + 'px';
-  }
-});
+  document.addEventListener('mousemove', (e) => {
+    if (!isResizing) return;
+    const newHeight = window.innerHeight - e.clientY;
+    if (newHeight >= 100 && newHeight <= window.innerHeight * 0.8) {
+      wrapper.style.height = newHeight + 'px';
+    }
+  });
 
-document.addEventListener('mouseup', () => {
-  isResizing = false;
-  document.body.style.userSelect = '';
-});
+  document.addEventListener('mouseup', () => {
+    isResizing = false;
+    document.body.style.userSelect = '';
+  });
 
-  </script>
+</script>
+
 </html>
