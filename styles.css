@@ -36,3 +36,92 @@ header{
     border-radius: 5px;
   }
   
+
+.background {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  line-height: 0;
+  position: fixed; /* o absolute si prefieres que se mueva al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* suficiente para quedar detrás del contenido */
+  overflow: hidden;
+}
+
+:root {
+  --triangle-dark-color: #000000;
+  --triangle-light-color: #ffffff;
+  --shadow-light-glow: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6))
+                      drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  --shadow-dark-glow: drop-shadow(0 0 6px rgba(0, 0, 0, 0.3))
+                     drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+.triangle-down,
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: relative;
+  margin-left: -50px;
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.triangle-down:first-child {
+  margin-left: 0;
+}
+
+.triangle-down {
+  border-bottom: 100px solid var(--triangle-dark-color);
+  filter: var(--shadow-light-glow);
+}
+
+.triangle-up {
+  border-top: 100px solid var(--triangle-dark-color);
+  filter: var(--shadow-light-glow);
+}
+
+.triangle-down:hover,
+.triangle-up:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8))
+          drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+}
+
+@media (prefers-color-scheme: light) {
+  .triangle-down {
+    border-bottom: 100px solid var(--triangle-light-color);
+    filter: var(--shadow-dark-glow);
+  }
+
+  .triangle-up {
+    border-top: 100px solid var(--triangle-light-color);
+    filter: var(--shadow-dark-glow);
+  }
+
+  .triangle-down:hover,
+  .triangle-up:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5))
+            drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
+  }
+}
+
+
+ .flashlight {
+    position: fixed;
+    pointer-events: none; /* Para que no interfiera con otros eventos */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.1) 60%, transparent 80%);
+    box-shadow: 0 0 30px 10px rgba(255,255,255,0.4);
+    mix-blend-mode: screen; /* Para mejor efecto de luz */
+    transform: translate(-50%, -50%); /* Centrar respecto al puntero */
+    transition: background 0.15s ease;
+  }

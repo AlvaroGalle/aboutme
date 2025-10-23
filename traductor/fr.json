@@ -1,0 +1,40 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Bonjour, je suis Álvaro",
+    "description": "Développeur Web et Passionné de Technologie",
+    "download_cv": "Télécharger CV",
+    "open_terminal": "Ouvrir Terminal"
+  },
+  "skills": {
+    "title": "Compétences",
+    "backend": "Backend",
+    "frontend": "Frontend"
+  },
+  "projects": {
+    "title": "Projets",
+    "gymtracker": {
+      "name": "Gymtracker",
+      "description": "Le projet utilise Java avec Spring Boot pour développer le backend et gérer la logique de l'application."
+    },
+    "planaula": {
+      "name": "PlanAula",
+      "description": "PlanAula est une application web créée en Java qui utilise PostgreSQL comme base de données pour stocker et gérer les informations des horaires scolaires."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name_placeholder": "Votre nom",
+    "email_placeholder": "Votre email",
+    "message_placeholder": "Votre message",
+    "send_button": "Envoyer"
+  },
+  "footer": {
+    "rights": "© 2025 Portfolio du Développeur. Tous droits réservés."
+  }
+}
